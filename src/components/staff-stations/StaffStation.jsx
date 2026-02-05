@@ -28,72 +28,74 @@ import {
 
 const StaffStation = () => {
   return (
-    <div className="min-h-screen bg-gray-50 p-3 sm:p-6">
+    <div className="min-h-screen bg-gray-50 p-3 sm:p-6 ">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 border bg-white p-4 mb-6">
-        <h1 className="text-lg font-semibold">Add Station</h1>
-        <Button variant="outline" className="w-full sm:w-auto">
-          BACK
-        </Button>
-      </div>
-
-      {/* Card */}
-      <div className="border bg-white p-4 sm:p-6">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Station Details */}
-          <section className="">
-            <h2 className="font-semibold mb-4">Staff Details</h2>
-
-            <div className="space-y-2">
-              <Input
-                label="Joined Date"
-                required
-                placeholder="Enter station name"
-              />
-              <Input label="Staff Code" />
-              <Input label="Roles" />
-              <Input label="First Name" />
-              <Input label="Last Name" />
-              <Input label="Email" />
-              <Input label="Phone" />
-              <Input label="Password" />
-            </div>
-          </section>
-
-          {/* Assign Stations*/}
-          <section className="col-span-2">
-            <h2 className="font-semibold mb-4">Assign Stations</h2>
-
-            <Table>
-           
-              <TableHeader>
-                <TableRow>
-                  <TableHead className="w-[300px]">STATION NAME</TableHead>
-                  <TableHead>CITY</TableHead>
-                  <TableHead>STATUS</TableHead>
-                  <TableHead className="text-right">INSTALLED DATE</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                <TableRow>
-                  <TableCell className="font-medium">Haridwar</TableCell>
-                  <TableCell>Haridwar</TableCell>
-                  <TableCell>Active</TableCell>
-                  <TableCell className="text-right">01/14/2026</TableCell>
-                </TableRow>
-              </TableBody>
-            </Table>
-          </section>
-        </div>
-
-        {/* Actions */}
-        <div className="flex flex-col sm:flex-row justify-center gap-3 mt-8">
-          <Button className="bg-slate-900 text-white w-full sm:w-auto">
-            SUBMIT
-          </Button>
+      <div className="p-4 border bg-white">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 bg-white mb-6">
+          <h1 className="text-lg font-semibold">Add Station</h1>
           <Button variant="outline" className="w-full sm:w-auto">
-            CANCEL
+            BACK
           </Button>
+        </div>
+        <hr />
+
+        {/* Card */}
+        <div className="mt-5">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Station Details */}
+            <section className="">
+              <h2 className="font-semibold mb-4">Staff Details</h2>
+
+              <div className="space-y-2">
+                <Input
+                  label="Joined Date"
+                  required
+                  placeholder="Enter station name"
+                />
+                <Input label="Staff Code" />
+                <Input label="Roles" />
+                <Input label="First Name" />
+                <Input label="Last Name" />
+                <Input label="Email" />
+                <Input label="Phone" />
+                <Input label="Password" />
+              </div>
+            </section>
+
+            {/* Assign Stations*/}
+            <section className="col-span-2">
+              <h2 className="font-semibold mb-4">Assign Stations</h2>
+
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className="w-[300px]">STATION NAME</TableHead>
+                    <TableHead>CITY</TableHead>
+                    <TableHead>STATUS</TableHead>
+                    <TableHead className="text-right">INSTALLED DATE</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  <TableRow>
+                    <TableCell className="font-medium">Haridwar</TableCell>
+                    <TableCell>Haridwar</TableCell>
+                    <TableCell>Active</TableCell>
+                    <TableCell className="text-right">01/14/2026</TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </section>
+          </div>
+
+          {/* Actions */}
+          <div className="flex flex-col sm:flex-row justify-center gap-3 mt-8">
+            <Button className="bg-slate-900 text-white w-full sm:w-auto">
+              SUBMIT
+            </Button>
+            <Button variant="outline" className="w-full sm:w-auto">
+              CANCEL
+            </Button>
+          </div>
         </div>
       </div>
     </div>
