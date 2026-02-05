@@ -6,6 +6,7 @@ import { WeatherDetailsCard } from "@/components/dashboard/WeatherDetailsCard.js
 import DashboardHeader from "@/components/dashboard/DashboardHeader";
 import WeatherTabs from "@/components/dashboard/WeatherTabs";
 import { CardImage } from "@/components/dashboard/CardImage";
+import { DashboardFooter } from "@/components/dashboard/DashboardFooter";
 
 const page = () => {
   const windData = { direction: "उत्तर-पूर्व", speed: 14.4 };
@@ -114,6 +115,9 @@ const page = () => {
             image="/dhaan.avif"
           />
         </div>
+
+        {/* DashboardFooter */}
+        <DashboardFooter />
       </div>
     </main>
   );
