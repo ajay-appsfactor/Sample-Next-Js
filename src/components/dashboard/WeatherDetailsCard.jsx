@@ -34,7 +34,7 @@ export function WeatherDetailsCard({ wind, atmosphere, pressure, uvIndex }) {
       </Card>
 
       {/* Column 3 — Pressure + UV (Split Equal) */}
-      <div className="h-full flex flex-col gap-6">
+      <div className="h-full flex flex-col gap-4">
         {/* Pressure */}
         <Card className="flex-1 shadow-md rounded-xl border hover:shadow-lg transition-all">
           <CardHeader>
