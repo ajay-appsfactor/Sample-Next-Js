@@ -14,21 +14,21 @@ const WeatherTabs = () => {
         <TabsList className="bg-muted/40 p-1 rounded-xl">
           <TabsTrigger
             value="overview"
-            className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow"
+            className="rounded-lg data-[state=active]:text-white data-[state=active]:bg-green-700 data-[state=active]:shadow"
           >
             Overview
           </TabsTrigger>
 
           <TabsTrigger
             value="hydrology"
-            className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow"
+            className="rounded-lg data-[state=active]:text-white data-[state=active]:bg-green-700  data-[state=active]:shadow"
           >
             Hydrology
           </TabsTrigger>
 
           <TabsTrigger
             value="soil"
-            className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow"
+            className="rounded-lg data-[state=active]:text-white data-[state=active]:bg-green-700  data-[state=active]:shadow"
           >
             Soil Health
           </TabsTrigger>
